@@ -1,0 +1,9 @@
+==> history of js
+==> where we write code of js
+==> variables
+==> datatypes
+==> operators
+==> control flow
+==> ternary operator
+==> looping
+==> communication with user

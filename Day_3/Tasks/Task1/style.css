@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  font-size: 23px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cfc0c0;
+  padding: 20px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-content {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.purple-card {
+  background: #8b5cf6;
+  flex: 2;
+}
+.gray-card {
+  background: #475569;
+  flex: 1;
+}
+.white-card {
+  background: #f3f4f6;
+  color: #333;
+  flex: 1;
+}
+.dark-card {
+  background: #1f2937;
+  flex: 2;
+}
+.aside-card {
+  background: #e5e7eb;
+  color: #333;
+  flex: 1;
+}

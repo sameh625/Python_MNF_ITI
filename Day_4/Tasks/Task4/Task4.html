@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <title>Task 4</title>
+  </head>
+  <body>
+    <script>
+      let fly = prompt("Do you fly?");
+      let ans;
+      if (fly=="yes") {
+      let wild = prompt("Are You Wild?");
+        if (wild=="yes") {
+          ans = "Eagle";
+        } else {
+          ans = "Parrot";
+        }
+      } else {
+        let undersea = prompt("Do you live undersea?");
+        let wild = prompt("Are You Wild?");
+
+        if (undersea=="yes") {
+          if (wild=="yes") {
+            ans = "Shark";
+          } else {
+            ans = "Dolphin";
+          }
+        } else {
+          if (wild=="yes") {
+            ans = "Lion";
+          } else {
+            ans = "Cat";
+          }
+        }
+        
+      }
+      alert(ans);
+    </script>
+  </body>
+</html>

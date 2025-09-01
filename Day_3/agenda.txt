@@ -1,0 +1,11 @@
+● HTML5 Symantec Tags
+● CSS Variables
+● Flexbox
+● Box Shadow
+● Text Shadow
+● Attribute Selectors
+● Pseudo Class Selectors
+● Transition 
+● Transform
+● CSS Animation
+● Vendors Prefix

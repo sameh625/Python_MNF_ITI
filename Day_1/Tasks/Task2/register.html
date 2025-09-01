@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    <form action="register.html">
+        <table border="3">
+            <thead>
+                <th colspan="2">Registration Form</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>First name </td>
+                    <td><input type="text" name="first" id="first"></td>
+                </tr>
+                <tr>
+                    <td>Last name </td>
+                    <td><input type="text" name="last" id="last"></td>
+                </tr>
+                <tr>
+                    <td>User name</td>
+                    <td><input type="text" name="user" id="user"></td>
+                </tr>
+                <tr>
+                    <td>Pass</td>
+                    <td><input type="password" name="pass" id="pass"></td>
+                </tr>
+                <tr>
+                    <td>Track</td>
+                    <td>
+                        <select name="track" id="track">
+                            <option value="back">Backend</option>
+                            <option value="front">Frontend</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Gender</td>
+                    <td >
+                        <input type="radio" name="gender" id="male" value="Male">Male
+                    </td>
+                    <tr>
+                        <td>
+                            <input type="radio" name="gender" id="female" value="Female">Female
+                        </td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td>Favorites</td>
+                    <td>
+                        <input type="checkbox" name="fav" id="foot">football
+                        <input type="checkbox" name="fav" id="basket">basketball
+                        <br>
+                        <input type="checkbox" name="fav" id="games">games
+                        <br>
+                        <input type="checkbox" name="fav" id="reading">reading
+                        <input type="checkbox" name="fav" id="swimming">swimming
+                        <br>
+                        <input type="checkbox" name="fav" id="Trave">Trave
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Description</td>
+                    <td>
+                        <textarea name="desc" id="desc" cols="20" rows="5"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="submit">
+                        <input type="reset">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="file" name="file" id="file"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    
+</body>
+</html>

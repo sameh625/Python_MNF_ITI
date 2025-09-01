@@ -1,0 +1,279 @@
+/* We can divide CSS selectors into five categories:
+    * Simple selectors (select elements based on name, id, class)
+    * Combinator selectors (select elements based on a specific relationship between them) => space > + ~
+    * Pseudo-class selectors (select elements based on a certain state) 
+    * Pseudo-elements selectors (select and style a part of an element)
+    * Attribute selectors (select elements based on an attribute or attribute value)
+ */
+
+
+:root{
+  --main-color: black;
+  /* --name: value */
+  --image-url : url('');
+  --border: 2px solid rgb(218, 29, 29);
+  --raduis: 10px
+
+} 
+
+*{
+  box-sizing: border-box;
+  transition: all 0.5s linear;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+/* header{
+  height: 200px;
+  width: 200px;
+  background-color: var(--main-color);
+  border-radius: var(--raduis);
+  border: var(--border);
+}
+
+h1, p{
+  color: var(--main-color);
+} */
+
+
+.cards-container{
+  background-color: rgb(145, 113, 113);
+  display: flex;
+  padding: 20px 0;
+  /* start: left 
+  end: right */
+  justify-content: center; /*x cross axis*/
+ align-content: space-evenly; /*according to container* (y axis)*/ 
+  /*align-items: flex-end*/ ; /*according to item refere to its row*/
+  gap: 10px 20px; /*row column*/
+  /* column-gap: 20px; */
+  /* row-gap: 20px; */
+
+  flex-wrap: wrap; /*over element wrap to new line (row)*/
+
+  /* flex-direction:column-reverse; */
+min-height: 900px;
+
+
+}
+
+.cards-container div{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(177, 177, 177);
+  color: white;
+  /* margin-bottom: 5px; */
+  /* margin-right: 10px; */
+  /* display: inline-block; */
+
+  /* box-shadow: y x blur spread color; */
+
+  box-shadow: 3px -5px 10px 3px rgb(198, 54, 54), -3px 5px 10px 3px rgb(109, 54, 198) ;
+  
+
+  text-shadow: 0px 0px 2px rgb(5, 5, 5);
+}
+
+.cards-container div:nth-of-type(2){
+  height: 250px;
+  /* margin-top: 20px; */
+}
+/* .cards-container div:nth-of-type(1){
+  order: 3;
+} */
+/* .cards-container div:nth-of-type(2){
+  order: 2;
+} */
+.cards-container div:nth-of-type(3){
+  order: 4;
+}
+.cards-container div:nth-of-type(4){
+  order: 1;
+
+  /* flex-grow */
+  /* flex-shrink */
+  /* align-self: center; */
+}
+
+
+
+/* .first::first-line{
+color: red;
+font-size: 25px;
+} */
+
+/* .input[type='email']{
+  border:1px solid red;
+}
+
+input[required]{
+border: 2px solid green;
+} */
+
+
+.card{
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  /* background: url('./images/burger.jpg') no-repeat center/cover; */
+  overflow: hidden;
+  position: relative;
+   /* transform: rotateY(180deg); */
+}
+
+
+.card p{
+ /* opacity: 0; */
+ position: absolute;
+ top: 0;
+ left: 0;
+ visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.461);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: all;
+    margin: 0;
+    
+  /*
+  speed curve 
+  ease => start slow then fast , end slow
+  ease-in => start slow, end slow
+  ease-out => end slow
+  ease-in-out => start slow, end slow
+  linear => speed is the same from start to end
+
+
+  */
+transition-timing-function: ease-in-out;
+  transition-duration: 3s;
+
+  /* transition: property duration timefuntion; */
+
+  transition: all 0.7s linear;
+  /* transition-delay: 5s; */
+}
+
+.card:hover p{
+  /* background-color: blue;
+  width: 400px; */
+
+  visibility: visible;
+  /* background-color: red; */
+  /* MOVE element by steps */
+    /* transform: translate(100px, 100px); */
+   /* transform: scale(1.5, 1.8); */
+}
+
+.card_container{
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover img{
+  transform: scale(1.3);
+}
+
+.card:hover{
+  /* transform: rotateY(90deg); */
+}
+
+/* .card{
+  transform: translate(100px, 200px);
+} */
+
+
+
+.square{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* transform: translate(200px); */
+  /* transform: translate(200px, 100px); */
+  /* transform: translate(100px, 100px);
+  transform: translate(0, 0); */
+
+  /* animation-name: moveSqaure ;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate; */
+}
+
+
+
+@keyframes moveSqaure{
+  /* from {
+transform: translate(0,0);
+  }
+
+  to{
+transform: translate(100px);
+  } */
+
+
+  /*
+  0,0
+  100
+  100,100
+  0, 100
+  0,0
+  */
+  0%{
+    transform: translate(0,0);
+    background-color: red;
+  }
+
+  30%{
+    transform: translate(100px);
+    background-color: blue;
+  }
+
+
+  60%{
+    transform: translate(100px, 100px);
+    background-color: green;
+  }
+
+  90%{
+    transform: translate(0, 100px);
+    background-color: yellow;
+  }
+
+  100%{
+    transform: translate(0,0);
+    background-color: aqua;
+  }
+  
+}
+
+
+.spinner{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(115, 115, 115);
+  border-radius: 50%;
+border: 5px solid  transparent ;
+border-top-color: blue;
+animation: loading 1s linear infinite;
+-webkit-animation: loading 1s linear infinite;
+-moz-animation: loading 1s linear infinite;
+-o-animation: loading 1s linear infinite;
+-ms-animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  
+  from{
+transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

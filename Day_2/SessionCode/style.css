@@ -1,0 +1,232 @@
+/* We can divide CSS selectors into five categories:
+    * Simple selectors (select elements based on name, id, class)
+    * Combinator selectors (select elements based on a specific relationship between them)
+    * Pseudo-class selectors (select elements based on a certain state)
+    * Pseudo-elements selectors (select and style a part of an element)
+    * Attribute selectors (select elements based on an attribute or attribute value)
+ */
+
+/* grouping selector */
+/* h1 , .main-p {
+  color: blue;
+  font-size: 40px;
+} */
+
+/* div p{
+    color:red;
+} */
+
+/* start of Combinators selector */
+/*select all p in main section*/
+/* .main-section p{ 
+    color:blue;
+} */
+
+/* select main p child in main section  */
+/* .main-section>p{
+    color:blue;
+} */
+
+/* apply style for p if it is first child */
+/* .main-section>p:first-child{
+    color:brown
+}
+.main-section>p:last-child{
+    color:rgb(157, 165, 42)
+} */
+
+/* apply style for first p in main section */
+/* .main-section>p:first-of-type{
+    color:brown
+}
+.main-section>p:last-of-type{
+    color:gray
+}
+
+.main-section>p:nth-child(3){
+color: red;
+} */
+
+/* select all p after main section (adjacent) */
+/* .main-section ~ p{
+    color: red;
+} */
+
+/* select first p after main section (adjacent) */
+/* .main-section + p{ 
+    color: rgb(16, 190, 91);
+} */
+
+/*
+style periority
+inline => internal => external
+*/
+
+/* ---------------------------------------- */
+p {
+  /* background-color: black; */
+  /* color: red; */
+  /* width:500px; */
+  /* width:70%; */
+  /*width: 100vw;*/ /*100% of viewport width*/
+  /* height: 100vh;*/ /*100% of viewport height*/
+
+  /* width: 400px;
+   height: 500px;
+    overflow: auto; */
+
+  /* background-image: url('./images/slide_1.jpg'); */
+
+  /* background-repeat: no-repeat;
+
+    background-position:center left;
+    background-size: cover;
+    background-attachment: fixed; */
+
+  /* short syntax => background : url repeat position/size attachment */
+  /* background: url("./images/slide_1.jpg") no-repeat center/cover fixed; */
+}
+
+/* a{
+    background-color: red;
+    width: 100px;
+} */
+
+/* --------------------- */
+
+/* global selector => select all elements */
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  color: rgb(236, 135, 20);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  /* font-family: sans-serif; */
+  text-indent: 20px;
+  text-align: center;
+
+  line-height: 1.4;
+  /* background-color: black; */
+  /* padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px; */
+
+  /* padding: 10px 10px 20px 10px ; */
+  /* padding: 10px 20px ; */
+  padding: 40px;
+  /* border-style: dashed;
+  border-width: 3px;
+  border-color: blue; */
+
+  border: 3px solid blue;
+  outline: 4px solid red;
+  outline-offset: 5px;
+  margin: 25px;
+
+  /* box-sizing: border-box; */
+  width: 200px;
+  /* real width => width + padding + border */
+}
+
+p span {
+  /* text-decoration: underline; */
+  text-decoration: line-through;
+  text-decoration-color: red;
+  /* text-decoration: overline; */
+  text-transform: capitalize;
+  text-transform: uppercase;
+  text-transform: lowercase;
+  /* letter-spacing: 5px; */
+
+  word-spacing: 10px;
+}
+
+a {
+  display: inline-block;
+  background-color: black;
+  width: 200px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+#new-div {
+  background-color: black;
+  color: white;
+  display: inline-block;
+}
+
+ul > li:last-child {
+  color: red;
+  background-color: black;
+  color: wheat;
+
+  float: left;
+}
+
+#first {
+  float: left;
+}
+
+#second {
+  float: right;
+}
+
+.clear-float {
+  clear: both; /* clear float*/
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  float: left;
+}
+
+.fixed {
+  background-color: green;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 9999999999;
+}
+.relative {
+  background-color: blue;
+  position: relative;
+  top: -30px;
+  right: 10px;
+  z-index: 1;
+}
+.abs {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 6;
+}
+
+.box-container {
+  /* position: relative; */
+  background-color: black;
+  overflow: hidden;
+  height: 700px;
+}
+
+/**
+position => position of element according to body
+static
+relarive
+absolute
+stiky
+fixed
+*/

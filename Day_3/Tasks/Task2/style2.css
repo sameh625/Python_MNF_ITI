@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  font-size: 23px;
+  transition: all 0.5s linear;
+}
+
+.main-container {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.food {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;  
+  box-shadow: 0 1px 6px #a4a3a3;
+}
+
+.food p {
+  margin: 0; 
+  display: flex;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.food img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: absolute;
+}
+.food:hover p {
+  opacity: 1;
+  height: 100%;
+  background-color: #00000073;
+}
+.food:hover img {
+  transform: scale(1.3);
+}

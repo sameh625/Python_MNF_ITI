@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.container .head h1{
+    text-transform: capitalize;
+}
+
+.container .head p{
+    font-style: italic;
+    width: 600px;       
+    margin: 0 auto; 
+}
+.products {
+    text-align: center; 
+    margin-top: 40px;
+}
+.items{
+    display: inline-block; 
+    width: 250px;
+    padding: 20px;
+    margin: 0 15px 30px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    text-align: center;
+}
+.items img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.items p{
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.items button{
+    background: #6a5acd;
+    padding: 10px 20px;
+    color: white;   
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

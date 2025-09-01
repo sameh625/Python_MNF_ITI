@@ -1,0 +1,9 @@
+● Intro to CSS.
+● CSS Selectors, Combinators and Grouping.
+● Dimensions.
+● Background and Color.
+● Text and Fonts Styles.
+● Box Model and Box Sizing.
+● CSS display.
+● CSS float.
+● CSS Position.

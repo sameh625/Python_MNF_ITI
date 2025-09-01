@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    color: brown;
+    margin-top: 10px;
+    
+}
+form {
+    border: 1px solid gray;
+    padding: 10px;
+    width: 70%;
+    margin: 10px auto;
+}

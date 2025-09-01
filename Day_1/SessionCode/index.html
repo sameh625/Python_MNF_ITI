@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <meta>
+    <title>page title html day1</title>
+    <meta name="author" content="eman mohamed" />
+    <meta
+      name="description"
+      content="This book covers core HTML markup, including traditional HTML and HTML5, and core CSS style, including CSS syntax and properties."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="html,frontend, form" />
+    <meta charset="ISO-8859-1" />
+    <!-- default for html 4 -->
+    <meta charset="UTF-8" />
+    <!-- default for html 5 -->
+    <!-- asscii table  -->
+  </head>
+
+  <body>
+    <!-- 
+        <p>
+           Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. 
+            <br>
+            Quidem eos ea dolorum iste 
+            facere! Iure mollitia iste unde ex ipsam accusamus laborum quisquam id? 
+            <br>
+            Deleniti quisquam ullam vitae tenetur sequi?
+           Lorem ipsum, dolor sit 
+           amet consectetur 
+           adipisicing elit. Earum libero quas maiores, et dolorum eveniet, atque quaerat corporis illo, natus facilis eligendi. Nobis perferendis nemo quibusdam quo necessitatibus ipsum officiis!
+
+        </p>
+
+    -->
+    <br />
+
+    <!-- this description section -->
+    <!-- 
+TODO: change content
+  
+ 
+ wertyui
+ wqerthyjuk
+ coment
+ -->
+    <!-- <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid molestias distinctio eum dolores facere. Minus iste, harum porro iusto nobis nulla dolorum id expedita, ab, ipsam quibusdam ut. Reiciendis, modi.
+        </p> -->
+
+    <!-- <h1>day1</h1>
+        <h2>task1</h2>
+        <h3>
+            asdfgh
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod facere cum quia voluptatibus nobis deserunt eius tempora blanditiis commodi minus beatae, molestiae dolore eum recusandae illum aspernatur perferendis autem!</p>
+        <h2>task2</h2> -->
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+   
+    <hr/>
+
+    <p>
+      <b>
+         <i>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </i>
+      </b>
+
+     4 <sub>2</sub>
+     4 <sup>2</sup>
+
+      <i>Fuga iusto numquam placeat earum consequatur</i>, quibusdam repudiandae
+      perspiciatis est aliquam hic, <del>voluptatem beatae? </del>Rerum, suscipit. In rem
+     <span> error pariatur voluptate tempore. </span>  aswedfrgthy
+    </p>
+
+    <p>
+        old price: <del>2000$</del> 
+        , new price: <mark>1500$</mark>
+
+
+    </p>
+    <p>
+        <center>
+            <u>text</u>
+        </center>
+    </p>
+<hr>
+    <a href="https://www.pexels.com/" target="_blank">
+        <img 
+            src="https://images.pexels.com/photos/18071152/pexels-photo-18071152.jpeg" 
+            width="200" 
+            title="image from pexel website , external image"
+            />
+    </a>
+
+    
+    <img src="./images/pexels-33516570.jpg" width="200" height="100" alt="image ">
+
+
+    <a href="https://www.w3schools.com/html/" target="_blank">w3 school</a>
+    <a href="https://google.com" target="_self" title="link navigate to google ">google</a>
+
+    <hr>
+
+<!-- 
+list 
+order list
+1- dfg
+2- dsfgh
+
+unorder list 
+description list    
+-->
+
+<h3>frontend courses</h3>
+<ol type="1">
+<li>
+    html
+    <ul type="square">
+    <li>html tag</li>
+    <li>head tag</li>
+    <li>body tag</li>
+
+    </ul>
+
+</li>
+<li>
+    <dl>
+        <dt>
+            css
+        </dt>
+
+        <dd>
+            css is style language
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, rem! Quia molestiae vitae nulla aliquid exercitationem repellat ex ullam sed sunt ipsum doloribus nemo sapiente animi, reiciendis, obcaecati temporibus deserunt!
+        </dd>
+    </dl>
+</li>
+<li>JavaScript</li>
+<li>bootstrap</li>
+</ol>
+
+
+
+
+<!-- <h3>html course</h3>
+<ul type="square">
+<li>html tag</li>
+<li>head tag</li>
+<li>body tag</li>
+
+</ul> -->
+
+
+<dl>
+<dt>css course</dt>
+<dd>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, fugit voluptatibus omnis in blanditiis unde accusamus numquam asperiores laudantium, vitae magni ipsum perferendis? Voluptate illum ipsa praesentium reprehenderit laudantium molestias!
+</dd>
+</dl>
+
+<hr>
+
+
+<!-- form -->
+
+<!-- post => send data -->
+<!-- get => get data -->
+<form action="about.html" method="get">
+    <h2>register form</h2>
+
+    <input name="id" value="10" hidden>
+    <label for="username">user name: </label>
+    <input id="username" type="text" name="username" required placeholder="enter user name without space" value="eman" readonly disabled/>
+
+    <br>
+    <br>
+    <label for="user-email">email: </label>
+    <input  id="user-email" type="email" name="email" required placeholder="enter valid email"/>
+    <br>
+    <br>
+     <label for="password">user password: </label>
+    <input id="password" type="password" name="password" required 
+    placeholder="password"
+    minlength="4"
+    maxlength="8"
+    />
+    <br>
+    <br>
+    <label>age: </label>
+    <input id="age" type="number" name="age" 
+    value="20"
+    required 
+    placeholder="enter valid number"
+    min="18"
+    max="25"
+    />
+
+
+    <label>gender</label>
+    male <input type="radio" name="gender" value="male" > 
+    female <input type="radio" name="gender" value="female"> 
+
+    <br>
+    <br>
+
+    <label for=""> courses</label>
+    <input type="checkbox" name="courses" value="html"> html
+    <input type="checkbox" name="courses" value="css"> css
+    <input type="checkbox" name="courses" value="js"> js
+    <br>
+    <br>
+
+
+    <label for="">track</label>
+    <select multiple name="track">
+        <option disabled selected>select your track</option>
+        <optgroup label="backend tracks">
+            <option value="php">PHP track</option>
+            <option value="python">python track</option>
+            <option value="node">node js track</option>
+        </optgroup>
+        <optgroup label="frontend tracks">
+            <option value="react">react track</option>
+            <option value="angular">angular track</option>
+            <option value="vue">vue track</option>
+        </optgroup>
+    </select>
+
+    <label>note</label>
+    <textarea name="note" rows="7" cols="20">
+        wergthjklkjhgfd
+    </textarea>
+
+    <br>
+    <br>
+    <button type="sumbit" >submit</button>
+    <button type="reset">reset</button>
+</form>
+
+<hr>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>email</th>
+            <th colspan="2">phone</th>
+            <th>address</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>eman</td>
+            <td>eman@gmail.com</td>
+            <td colspan="2">01008545</td>
+            
+            <td>cairo</td>
+        </tr>
+        <tr>
+            <td>ahmed</td>
+            <td>ahmed@gmail.com</td>
+            <td>01008545</td>
+            <td>01119451</td>
+            <td rowspan="2">giza</td>
+        </tr>
+        <tr>
+            <td>mohamed</td>
+            <td>mohamed@gmail.com</td>
+           
+          <td>01119451</td>
+          <td>01294855</td>
+            <!-- <td >giza</td> -->
+        </tr>
+
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="3">copy right </td>
+        </tr>
+    </tfoot>
+</table>
+
+<!-- <form action="">
+    <input type="text">
+    <button>search</button>
+</form> -->
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- <video width="400px" controls autoplay loop>
+  <source src="./Week 5 part 2.mp4">  
+  <source src="./Week 5 part 2.mkv">  
+</video>
+<audio width="400px" controls autoplay loop>
+  <source src="./Week 5 part 2.mkv">  
+</audio> -->
+
+<iframe  width="500px" src="./index.html" frameborder="1"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6QAELgirvjs?si=sqisRUlb0UkGO7sb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13786.51183950093!2d31.246949136257165!3d30.24768423539695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14586d1c7b2ac637%3A0xbce3b65475d6d141!2z2K3Yr9mK2YLYqSDYrNmF2KfZhCDYudio2K8g2KfZhNmG2KfYtdixINin2YTZg9mF2KfYsQ!5e0!3m2!1sen!2seg!4v1756114357485!5m2!1sen!2seg" width="400" height="400" frameborder="1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </body>
+</html>
