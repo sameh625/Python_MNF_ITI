@@ -1,0 +1,18 @@
+. introduction to DOM  ==>  Document Object Model   ==> HTML 
+. How to select element from dom
+. How to change content    
+. How to change style             
+. How to deal with atrributes            
+. How to create new element            
+ -- Event            
+ -- BOM 
+
+
+ ============> {
+    key:value ==> ,
+    (){
+
+    }
+ }   
+
+ ===> tree   ==> parents ==> child       
