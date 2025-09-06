@@ -1,25 +1,34 @@
-let timer =document.querySelector(".timer")
-let msg   = document.querySelector(".msg")
-let reset = document.querySelector(".reset")
+let timer = document.querySelector(".timer");
+let msg   = document.querySelector(".msg");
+let reset = document.querySelector(".reset");
 
 let interval;
-let counts=5;
+let redirectTimeout;
+let counts = 5;
 
-var times=()=>{
+function times(){
     timer.textContent = counts;
-    interval =setInterval(()=>{
+    interval = setInterval(() => {
         timer.textContent = counts;
-        
-        if(counts <= 0){
+
+        if (counts <= 0) {
             clearInterval(interval);
             msg.innerHTML = `Flash Sale has started! <a href="https://www.amazon.com" target="_blank">Go to Sale</a>`;
-            setTimeout(()=>{
-                window.location.href="https://www.amazon.com"
-            },2000)
+            redirectTimeout = setTimeout(() => {
+                window.location.href = "https://www.amazon.com";
+            }, 2000);
+        } else {
+            counts--; // only decrease while > 0
         }
-        counts--;
-    }, 1000)
+    }, 1000);   
 }
 
+reset.addEventListener("click", () => {
+    clearInterval(interval);
+    clearTimeout(redirectTimeout);
+    msg.innerHTML = "";
+    counts = 5;
+    times();
+});
 
-times()
+times();

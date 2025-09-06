@@ -1,0 +1,7 @@
+==========> Event 
+
+/**
+form ==> preventDefault ==> self study
+**/
+==========> BOM 
+====> Ajax
