@@ -1,0 +1,46 @@
+-- 1.
+
+
+INSERT INTO customers (customer_name, contact_name, address, city, postal_code, country)
+VALUES ('Sameh Mostafa', 'Ahmed Ali', '123 Nile Street', 'Cairo', '11511', 'Egypt');
+
+
+-- 2.
+
+INSERT INTO products (product_name, category_id, unit, price)
+VALUES ('Olive Oil', 1, '500ml bottle', 120.00);
+
+
+-- 3.
+SELECT * FROM products
+WHERE price > 100;
+
+
+-- 4.
+SELECT * FROM products
+WHERE price < 50;
+
+
+-- 5.
+SELECT * FROM products
+WHERE price BETWEEN 50 AND 150;
+
+
+-- 6.
+SELECT * FROM products
+WHERE product_name LIKE 'O%';
+
+
+-- 7.
+SELECT * FROM customers
+WHERE city ILIKE '%o';
+
+
+-- 8.
+SELECT * FROM products
+WHERE product_name ILIKE '%oil%';
+
+
+-- 9.
+SELECT * FROM products
+WHERE category_id IN (1, 2, 3);
