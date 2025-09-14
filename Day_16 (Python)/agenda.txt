@@ -1,0 +1,13 @@
+--oop 
+---Encaspulation
+---staticmethod & classmethod
+---inheritance
+-----single 
+-----multiple
+-----multilevel
+-----Hierarchal
+-----Hybrid
+---polymorphism
+-----override
+-----overloading
+---abstraction
