@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rating List</title>
+</head>
+<body>
+    <div >
+        <h1>rating List</h1>
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for rating in ratings %}
+                <tr>
+                    <td>{{rating.title}}</td>
+                    <td>{{rating.rating}}</td>
+                <tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

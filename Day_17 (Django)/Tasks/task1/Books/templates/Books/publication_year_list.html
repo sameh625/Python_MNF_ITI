@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>year List</title>
+</head>
+<body>
+    <div >
+        <h1>Books with years</h1>
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for year in years %}
+                <tr>
+                    <td>{{year.title}}</td>
+                    <td>{{year.year}}</td>
+                <tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

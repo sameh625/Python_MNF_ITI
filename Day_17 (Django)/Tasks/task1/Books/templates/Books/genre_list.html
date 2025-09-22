@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>genre List</title>
+</head>
+<body>
+    <div >
+        <h1>genre List</h1>
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>Genre</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for genre in genres %}
+                <tr>
+                    <td>{{genre.type}}</td>
+                <tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
