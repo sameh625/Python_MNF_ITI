@@ -67,9 +67,3 @@ Note: For full details, setup, and API notes, refer to the project’s own READM
 - Review SQL in `DB` days; you can run them against a local RDBMS.
 - Python tasks can be executed with `python file.py` in `Python` days.
 - Django days include small projects you can run with `python manage.py runserver` after installing dependencies.
-
-## Next Steps
-- Deepen JS with modern tooling (modules, bundlers) and frameworks
-- Add tests (unit/integration) across Python/Django and JS
-- Containerize services for reproducible environments
-- Deploy a demo instance of the final project
